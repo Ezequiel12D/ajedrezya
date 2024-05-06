@@ -1,0 +1,1 @@
+Aqui los desarrolladores deberan crear los archivos que solo seran html y vista (lo que ve el usuario) sin contemplar las modificaciones hechas con css
