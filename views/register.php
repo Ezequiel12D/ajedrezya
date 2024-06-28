@@ -1,83 +1,221 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <title>Registrarse</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="../images/logo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro en Página de Ajedrez</title>
     <style>
-        .form-control {
-            max-width: 300px;
-            margin: auto;
-        }
-
-        .form-control1 {
-            max-width: 120px;
-            margin: auto;
-        }
-
-
-        .label-input {
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
             display: flex;
-            justify-content: space-between;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 400px;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #333;
+            text-align: center;
+            position: relative;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 28px;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+        }
+
+        .chessboard {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .chessboard-row {
+            display: flex;
+        }
+
+        .chessboard-square {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .chessboard-square:nth-child(even) {
+            background-color: #f0d9b5;
+        }
+
+        .chessboard-square:nth-child(odd) {
+            background-color: #b58863;
+        }
+
+        form {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+            color: #555;
+            text-align: left;
+            width: 100%;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="password"]:focus {
+            border-color: #4CAF50;
+        }
+
+        .password-toggle {
+            position: absolute;
+            top: 50%;
+            right: 10px;
+            transform: translateY(-50%);
+            cursor: pointer;
+            color: #777;
+            font-size: 18px;
+        }
+
+        .password-toggle:hover {
+            color: #333;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .footer-text {
+            text-align: center;
+            margin-top: 20px;
+            color: #555;
+        }
+
+        .footer-text a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+
+        .footer-text a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 
 <body>
-    <center>
-        <br>
-        <div>
-            <center>
-                <div text-align:center>
-                    <div class="bd-example-snippet bd-code-snippet" text-align:center>
-                        <br>
-                        <form style="border:1px solid black;padding:1rem;border-radius: 0.5rem;" class="form-control" id="reg-form">
-                            <h2>Registrarse</h2>
-                            <br>
-                            <div class="center">
-                                <div class="form-floating mb-3">
-                                    <div class="label-input">
-                                        <!--<label for="floatingInput">Nombre de usuario:</label>-->
-                                        <input type="text" class="form-control" id="Name" placeholder="nombre " required>
-                                    </div>
-                                    <br>
-                                    <div class="label-input">
-                                        <input type="text" class="form-control" id="Username" placeholder="nombre de usuario" required>
-                                    </div>
-                                    <br>
-                                    <div class="label-input">
-                                        <input type="email" class="form-control" id="Email" placeholder="correo electronico" required>
-                                    </div>
-                                    <br>
-                                    <div class="label-input">
-                                        <!-- <label for="floatingpassword">Contraseña:</label>-->
-                                        <input type="password" class="form-control" id="Password" placeholder="contraseña" required>
-                                    </div>
-                                    <br>
-                                    <div class="label-input">
-                                        <input type="password" class="form-control" id="confirmpass" placeholder="repetir contraseña" required>
-                                    </div>
-                                    <br>
-                                </div>
-                                <div>
-                                    <input type="date" class="form-control1" id="Date">
-                                    <input type="list" class="form-control1" id="Gender" placeholder="genero" required>
-
-                                </div>
-                            </div>
-                            <br>
-                            <h3><input type="submit" value="Enviar" id="reg-btn" class="btn btn-success"></h3>
-                    </div>
-                </div>
-                </form>
-                </br>
-            </center>
+    <div class="container">
+        <div class="chessboard">
+            <!-- Tablero de Ajedrez (ejemplo) -->
+            <div class="chessboard-row">
+                <div class="chessboard-square">♜</div>
+                <div class="chessboard-square">♞</div>
+                <div class="chessboard-square">♝</div>
+                <div class="chessboard-square">♛</div>
+                <div class="chessboard-square">♚</div>
+                <div class="chessboard-square">♝</div>
+                <div class="chessboard-square">♞</div>
+                <div class="chessboard-square">♜</div>
+            </div>
+            <div class="chessboard-row">
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+                <div class="chessboard-square">♟︎</div>
+            </div>
+            <!-- Agrega más filas según sea necesario -->
         </div>
-    </center>
+        <h2>Registro en Página de Ajedrez</h2>
+        <form action="procesar_registro.php" method="post">
+            <label for="username">Nombre de usuario:</label>
+            <input type="text" id="username" name="username" required>
+
+
+            <label for="email">Correo electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+
+            <label for="password">Contraseña:</label>
+            <div style="position: relative;">
+                <input type="password" id="password" name="password" required>
+                <span class="password-toggle" onclick="togglePassword()">&#x1f441;</span>
+            </div>
+
+
+            <input type="submit" value="Registrarse">
+
+
+            <div class="footer-text">
+                ¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a>
+            </div>
+        </form>
+    </div>
+
+
+    <script>
+        function togglePassword() {
+            var passwordField = document.getElementById("password");
+            var passwordToggle = document.querySelector(".password-toggle");
+
+
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                passwordToggle.innerHTML = "&#x1f440;"; // Icono de ojo abierto
+            } else {
+                passwordField.type = "password";
+                passwordToggle.innerHTML = "&#x1f441;"; // Icono de ojo cerrado
+            }
+        }
+    </script>
 </body>
 
-<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script src="../js/user/register.js"></script>
+</html>
