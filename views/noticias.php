@@ -4,11 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio - Sitio de Ajedrez</title>
+    <title>Noticias - Sitio de Ajedrez</title>
     <link rel="stylesheet" href="../css/home.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 
@@ -30,72 +27,22 @@
         </div>
     </header>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bienvenido a AjedrezYA!</h1>
-            <p>El lugar donde los amantes del ajedrez se encuentran.</p>
-            <button>Descarga ahora</button>
-        </div>
-    </section>
-
-    <section class="features">
-        <h2>¿Qué Ofrecemos?</h2>
-        <div class="feature-grid">
-            <div class="feature">
-                <i class="icon-tutorial"></i>
-                <h3>Tutoriales Interactivos</h3>
-                <p>Aprenda ajedrez desde lo básico hasta lo avanzado.</p>
-            </div>
-            <div class="feature">
-                <i class="icon-news"></i>
-                <h3>Noticias Actualizadas</h3>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Noticias de Ajedrez</h1>
                 <p>Manténgase al día con las últimas noticias y eventos de ajedrez.</p>
             </div>
-            <div class="feature">
-                <i class="icon-community"></i>
-                <h3>Comunidad Activa</h3>
-                <p>Conéctese con otros entusiastas del ajedrez.</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="news">
-        <h2>Últimas Noticias</h2>
-        <div class="news-grid">
-            <div class="news-article">
-                <h3>Título de Noticia</h3>
-                <p>Resumen de la noticia...</p>
-                <a href="#">Leer Más</a>
-            </div>
-            <div class="news-article">
-                <h3>Título de Noticia</h3>
-                <p>Resumen de la noticia...</p>
-                <a href="#">Leer Más</a>
-            </div>
-        </div>
-    </section>
+        <section class="content">
+            <h2>Últimas Noticias</h2>
+            <p>Aquí encontrarás las noticias más recientes sobre el mundo del ajedrez.</p>
+            <!-- Aquí puedes agregar más contenido específico de las noticias -->
+        </section>
+    </main>
 
-    <section class="testimonials">
-        <h2>Lo Que Dicen Nuestros Usuarios</h2>
-        <div class="testimonial-grid">
-            <div class="testimonial">
-                <p>"Este sitio es increíble para aprender y mejorar mi ajedrez."</p>
-                <p>- Usuario Satisfecho</p>
-            </div>
-            <div class="testimonial">
-                <p>"Los torneos en línea son muy competitivos y divertidos."</p>
-                <p>- Otro Usuario</p>
-            </div>
-        </div>
-    </section>
-
-    <div class="community">
-        <h2>Únase a Nuestra Comunidad</h2>
-        <p>Conéctese con otros jugadores, participe en discusiones y más.</p>
-        <a href="#">Unirse Ahora</a>
-    </div>
-
-    <<footer>
+    <footer>
         <div class="footer-content">
             <div class="footer-section footer-about">
                 <h3>About Us</h3>
@@ -128,8 +75,7 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Chess Organization. All Rights Reserved.</p>
         </div>
-        </footer>
-
+    </footer>
 </body>
 
 </html>
