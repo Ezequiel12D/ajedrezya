@@ -8,7 +8,8 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f0f0;
+            background-color: #f5f5dc;
+            /* Beige */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -19,17 +20,20 @@
         .container {
             width: 100%;
             max-width: 400px;
-            background-color: #fff;
+            background-color: #ffffff;
+            /* Blanco */
             padding: 30px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            color: #333;
+            color: #333333;
+            /* Negro */
             text-align: center;
             position: relative;
         }
 
         h2 {
-            color: #4CAF50;
+            color: #333333;
+            /* Negro */
             font-size: 28px;
             text-transform: uppercase;
             margin-bottom: 20px;
@@ -51,15 +55,20 @@
             justify-content: center;
             align-items: center;
             font-size: 24px;
-            color: #333;
+            color: #333333;
+            /* Negro */
         }
 
         .chessboard-square:nth-child(even) {
-            background-color: #f0d9b5;
+            background-color: #f5f5dc;
+            /* Beige */
         }
 
         .chessboard-square:nth-child(odd) {
-            background-color: #b58863;
+            background-color: #333333;
+            /* Negro */
+            color: #ffffff;
+            /* Blanco */
         }
 
         form {
@@ -73,7 +82,8 @@
             font-weight: bold;
             display: block;
             margin-bottom: 5px;
-            color: #555;
+            color: #333333;
+            /* Negro */
             text-align: left;
             width: 100%;
         }
@@ -94,7 +104,8 @@
         input[type="text"]:focus,
         input[type="email"]:focus,
         input[type="password"]:focus {
-            border-color: #4CAF50;
+            border-color: #333333;
+            /* Negro */
         }
 
         .password-toggle {
@@ -108,11 +119,13 @@
         }
 
         .password-toggle:hover {
-            color: #333;
+            color: #333333;
+            /* Negro */
         }
 
         input[type="submit"] {
-            background-color: #4CAF50;
+            background-color: #8b4513;
+            /* Marrón oscuro */
             color: white;
             border: none;
             padding: 12px 20px;
@@ -128,18 +141,22 @@
         }
 
         input[type="submit"]:hover {
-            background-color: #45a049;
+            background-color: #d2b48c;
+            /* Marrón claro */
         }
 
         .footer-text {
             text-align: center;
             margin-top: 20px;
-            color: #555;
+            /* Ajusta este valor según sea necesario */
+            color: #333333;
+            /* Cambiado a negro para mayor contraste */
         }
 
         .footer-text a {
-            color: #4CAF50;
-            text-decoration: none;
+            color: #8b4513;
+            /* Color marrón oscuro */
+            text-decoration: underline;
         }
 
         .footer-text a:hover {
@@ -151,7 +168,6 @@
 <body>
     <div class="container">
         <div class="chessboard">
-            <!-- Tablero de Ajedrez (ejemplo) -->
             <div class="chessboard-row">
                 <div class="chessboard-square">♜</div>
                 <div class="chessboard-square">♞</div>
@@ -172,7 +188,6 @@
                 <div class="chessboard-square">♟︎</div>
                 <div class="chessboard-square">♟︎</div>
             </div>
-            <!-- Agrega más filas según sea necesario -->
         </div>
         <h2>Registro en Página de Ajedrez</h2>
         <form action="procesar_registro.php" method="post">
@@ -209,10 +224,10 @@
 
             if (passwordField.type === "password") {
                 passwordField.type = "text";
-                passwordToggle.innerHTML = "&#x1f440;"; // Icono de ojo abierto
+                passwordToggle.innerHTML = "&#x1f440;";
             } else {
                 passwordField.type = "password";
-                passwordToggle.innerHTML = "&#x1f441;"; // Icono de ojo cerrado
+                passwordToggle.innerHTML = "&#x1f441;";
             }
         }
     </script>

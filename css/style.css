@@ -1,84 +1,7 @@
 body {
-    background-color: #f5f5f5;
-}
-
-.navbar-brand {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-}
-
-.header {
-    background: url('ajedrez-header.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-}
-
-.card-header {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-.card-body a.btn-outline-primary {
-    border-color: #007bff;
-    color: #007bff;
-}
-
-.card-body a.btn-outline-primary:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-
-
-
-
-
-
-
-body {
-    background-color: #f5f5f5;
-}
-
-.navbar-brand {
-    font-family: 'Georgia', serif;
-    font-weight: bold;
-}
-
-.header {
-    background: url('ajedrez-header.jpg') no-repeat center center;
-    background-size: cover;
-    color: white;
-}
-
-.card-header {
-    background-color: #007bff;
-    color: #ffffff;
-}
-
-.card-body a.btn-outline-primary {
-    border-color: #007bff;
-    color: #007bff;
-}
-
-.card-body a.btn-outline-primary:hover {
-    background-color: #007bff;
-    color: white;
-}
-
-footer {
-    position: relative;
-    bottom: 0;
-    width: 100%;
-}
-body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f5f5dc;
+    /* Beige */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -86,58 +9,147 @@ body {
     margin: 0;
 }
 
-.login-container {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    width: 300px;
+.container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #ffffff;
+    /* Blanco */
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333333;
+    /* Negro */
+    text-align: center;
+    position: relative;
 }
 
-.login-form {
+h2 {
+    color: #333333;
+    /* Negro */
+    font-size: 28px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.chessboard {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+.chessboard-row {
+    display: flex;
+}
+
+.chessboard-square {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: #333333;
+    /* Negro */
+}
+
+.chessboard-square:nth-child(even) {
+    background-color: #f5f5dc;
+    /* Beige */
+}
+
+.chessboard-square:nth-child(odd) {
+    background-color: #333333;
+    /* Negro */
+    color: #ffffff;
+    /* Blanco */
+}
+
+form {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-}
-
-.login-form h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: #333;
-}
-
-.form-group {
-    margin-bottom: 15px;
+    align-items: center;
 }
 
 label {
     font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333333;
+    /* Negro */
+    text-align: left;
+    width: 100%;
 }
 
 input[type="text"],
+input[type="email"],
 input[type="password"] {
-    padding: 8px;
     width: 100%;
-    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
 }
 
-.btn {
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #333333;
+    /* Negro */
+}
+
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
     cursor: pointer;
-    border-radius: 4px;
+    color: #777;
+    font-size: 18px;
 }
 
-.btn:hover {
-    background-color: #4caf50;
+.password-toggle:hover {
+    color: #333333;
+    /* Negro */
 }
 
-.error-message {
-    color: red;
-    font-size: 14px;
-    margin-top: 10px;
+input[type="submit"] {
+    background-color: #8b4513;
+    /* Marrón oscuro */
+    color: white;
+    border: none;
+    padding: 12px 20px;
     text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+    background-color: #d2b48c;
+    /* Marrón claro */
+}
+
+.footer-text {
+    text-align: center;
+    margin-top: 20px;
+    color: #333333;
+    /* Negro */
+}
+
+.footer-text a {
+    color: #8b4513;
+    /* Marrón oscuro */
+    text-decoration: underline;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
 }

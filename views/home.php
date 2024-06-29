@@ -4,103 +4,123 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AjedrezYA - Foro</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <title>Inicio - Sitio de Ajedrez</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">AjedrezYA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Foro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Sobre Nosotros</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
-                </li>
+    <header>
+        <div class="logo">AjedrezYa!</div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Tutoriales</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Comunidad</a></li>
+                <li><a href="#">Tienda</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
-        </div>
-    </nav>
-
-    <header class="bg-primary text-white text-center py-5">
-        <div class="container">
-            <h1 class="display-4">Bienvenidos al Foro de AjedrezYA</h1>
-            <p class="lead">Únete a la comunidad y comparte tus estrategias y conocimientos sobre ajedrez.</p>
+        </nav>
+        <div class="auth-buttons">
+            <a href="register.php" class="auth-button">Registrarse</a>
+            <a href="login.php" class="auth-button">Iniciar Sesión</a>
         </div>
     </header>
 
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card mb-4">
-                    <div class="card-header">Tema: Estrategias de Apertura</div>
-                    <div class="card-body">
-                        <p class="card-text">Discutamos las mejores estrategias para abrir una partida de ajedrez. Comparte tus conocimientos y aprende de otros.</p>
-                        <a href="#" class="btn btn-outline-primary">Ver Discusión</a>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="card-header">Tema: Trucos y Trampas</div>
-                    <div class="card-body">
-                        <p class="card-text">¿Conoces algún truco o trampa que quieras compartir? Este es el lugar.</p>
-                        <a href="#" class="btn btn-outline-primary">Ver Discusión</a>
-                    </div>
-                </div>
-                <div class="card mb-4">
-                    <div class="card-header">Tema: Partidas Famosas</div>
-                    <div class="card-body">
-                        <p class="card-text">Analiza y comenta sobre las partidas más famosas de la historia del ajedrez.</p>
-                        <a href="#" class="btn btn-outline-primary">Ver Discusión</a>
-                    </div>
-                </div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Bienvenido a AjedrezYA!</h1>
+            <p>El lugar donde los amantes del ajedrez se encuentran.</p>
+            <button>Descarga ahora</button>
+        </div>
+    </section>
+
+    <section class="features">
+        <h2>¿Qué Ofrecemos?</h2>
+        <div class="feature-grid">
+            <div class="feature">
+                <i class="icon-tutorial"></i>
+                <h3>Tutoriales Interactivos</h3>
+                <p>Aprenda ajedrez desde lo básico hasta lo avanzado.</p>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <div class="card-header">Nuevos Usuarios</div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Usuario1</a></li>
-                            <li><a href="#">Usuario2</a></li>
-                            <li><a href="#">Usuario3</a></li>
-                            <li><a href="#">Usuario4</a></li>
-                            <li><a href="#">Usuario5</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header">Recientes Actividades</div>
-                    <div class="card-body">
-                        <ul class="list-unstyled">
-                            <li><a href="#">Usuario1 comentó en Estrategias de Apertura</a></li>
-                            <li><a href="#">Usuario2 inició un nuevo tema en Trucos y Trampas</a></li>
-                            <li><a href="#">Usuario3 respondió en Partidas Famosas</a></li>
-                            <li><a href="#">Usuario4 se unió al foro</a></li>
-                            <li><a href="#">Usuario5 comentó en Estrategias de Apertura</a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div class="feature">
+                <i class="icon-news"></i>
+                <h3>Noticias Actualizadas</h3>
+                <p>Manténgase al día con las últimas noticias y eventos de ajedrez.</p>
+            </div>
+            <div class="feature">
+                <i class="icon-community"></i>
+                <h3>Comunidad Activa</h3>
+                <p>Conéctese con otros entusiastas del ajedrez.</p>
             </div>
         </div>
+    </section>
+
+    <section class="news">
+        <h2>Últimas Noticias</h2>
+        <div class="news-grid">
+            <div class="news-article">
+                <h3>Título de Noticia</h3>
+                <p>Resumen de la noticia...</p>
+                <a href="#">Leer Más</a>
+            </div>
+            <div class="news-article">
+                <h3>Título de Noticia</h3>
+                <p>Resumen de la noticia...</p>
+                <a href="#">Leer Más</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>Lo Que Dicen Nuestros Usuarios</h2>
+        <div class="testimonial-grid">
+            <div class="testimonial">
+                <p>"Este sitio es increíble para aprender y mejorar mi ajedrez."</p>
+                <p>- Usuario Satisfecho</p>
+            </div>
+            <div class="testimonial">
+                <p>"Los torneos en línea son muy competitivos y divertidos."</p>
+                <p>- Otro Usuario</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="community">
+        <h2>Únase a Nuestra Comunidad</h2>
+        <p>Conéctese con otros jugadores, participe en discusiones y más.</p>
+        <a href="#">Unirse Ahora</a>
     </div>
 
-    <footer class="bg-dark text-white text-center py-3 mt-5">
-        <p>&copy; 2024 AjedrezYA. Todos los derechos reservados.</p>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="#">Inicio</a>
+                <a href="#">Tutoriales</a>
+                <a href="#">Noticias</a>
+                <a href="#">Comunidad</a>
+                <a href="#">Tienda</a>
+                <a href="#">Contacto</a>
+            </div>
+            <div class="contact-info">
+                <p>Correo: contacto@sitioajedrez.com</p>
+                <p>Teléfono: +123 456 7890</p>
+                <p>Dirección: Calle Falsa 123, Ciudad, País</p>
+            </div>
+            <div class="social-media">
+                <a href="#">Facebook</a>
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+            <div class="legal">
+                <a href="#">Política de Privacidad</a>
+                <a href="#">Términos de Uso</a>
+            </div>
+        </div>
     </footer>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 
 </html>
