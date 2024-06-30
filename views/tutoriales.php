@@ -18,7 +18,6 @@
                 <li><a href="tutoriales.php">Tutoriales</a></li>
                 <li><a href="noticias.php">Noticias</a></li>
                 <li><a href="comunidad.php">Comunidad</a></li>
-                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
         <div class="auth-buttons">
@@ -38,7 +37,6 @@
         <section class="content">
             <h2>Tutoriales Interactivos</h2>
             <p>En esta sección encontrarás tutoriales para mejorar tu juego.</p>
-            <!-- Aquí puedes agregar más contenido específico de los tutoriales -->
         </section>
     </main>
 
@@ -49,15 +47,6 @@
                 <p>Somos una organización dedicada a promover el ajedrez a nivel mundial, ofreciendo recursos y
                     herramientas para jugadores de todos los niveles.</p>
             </div>
-            <div class="footer-section footer-links">
-                <h3>Quick Links</h3>
-                <ul>
-                    <li><a href="home.php">Inicio</a></li>
-                    <li><a href="tutoriales.php">Tutoriales</a></li>
-                    <li><a href="noticias.php">Noticias</a></li>
-                    <li><a href="comunidad.php">Comunidad</a></li>
-                </ul>
-            </div>
             <div class="footer-section footer-contact">
                 <h3>Contacto</h3>
                 <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
@@ -65,7 +54,7 @@
                 <p><i class="fas fa-envelope"></i> info@example.com</p>
             </div>
             <div class="footer-section footer-social">
-                <h3>Follow Us</h3>
+                <h3>Seguinos en:</h3>
                 <br>
                 <a href="#"><i class="fab fa-twitter"></i></a>
                 <br>
