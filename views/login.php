@@ -33,7 +33,7 @@
             </div>
         </div>
         <h2>Iniciar Sesión en Ajedrez YA!</h2>
-        <form action="procesar_login.php" method="post">
+        <form action="../includes/procesar_login.php" method="post">
             <label for="username">Nombre de usuario:</label>
             <input type="text" id="username" name="username" required>
 

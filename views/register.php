@@ -33,7 +33,7 @@
             </div>
         </div>
         <h2>Registro en ajedrez ya!</h2>
-        <form action="procesar_registro.php" method="post">
+        <form action="../includes/procesar_registro.php" method="post">
             <label for="username">Nombre de usuario:</label>
             <input type="text" id="username" name="username" required>
 
@@ -53,7 +53,7 @@
 
 
             <div class="footer-text">
-                ¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a>
+                ¿Ya tienes una cuenta? <a href="../views/login.php">Inicia sesión aquí</a>
             </div>
         </form>
     </div>
