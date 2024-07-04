@@ -1,13 +1,13 @@
 <?php
+session_start();
+
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "ajedrezya";
 
-// Crear conexión
-$conn = new mysqli($servername, $username, $password, 'ajedrezya');
+$conn = new mysqli($servername, $username, $password, $dbname);
 
-// Verificar conexión
 if ($conn->connect_error) {
     die("Conexión fallida: " . $conn->connect_error);
 }
@@ -20,10 +20,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $result = $conn->query($sql);
 
     if ($result->num_rows > 0) {
-        // Obtener datos del usuario
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['password'])) {
-            echo "Inicio de sesión exitoso. Bienvenido, " . $row['username'];
+            $_SESSION['username'] = $row['username'];
+            echo "<script>
+                    alert('Inicio de sesión exitoso. Bienvenido, " . $row['username'] . "');
+                    window.location.href = '../views/home.php';
+                  </script>";
         } else {
             echo "Contraseña incorrecta";
         }

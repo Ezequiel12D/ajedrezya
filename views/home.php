@@ -1,3 +1,7 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -22,18 +26,17 @@
                 <li><a href="noticias.php">Noticias</a></li>
                 <li><a href="comunidad.php">Comunidad</a></li>
             </ul>
-        </nav>
-        <div class="auth-buttons">
-            <a href="register.php" class="auth-button">Registrarse</a>
-            <a href="login.php" class="auth-button">Iniciar Sesión</a>
-        </div>
+        </nav> <?php if (!isset($_SESSION['username'])): ?>
+            <div class="auth-buttons"> <a href="register.php" class="auth-button">Registrarse</a> <a href="login.php"
+                    class="auth-button">Iniciar Sesión</a> </div> <?php else: ?>
+            <div class="auth-buttons"> <a href="../includes/logout.php" class="auth-button">Cerrar Sesión</a> </div>
+        <?php endif; ?>
     </header>
-
     <section class="hero">
         <div class="hero-content">
-            <h1>Bienvenido a AjedrezYA!</h1>
-            <p>El lugar donde los amantes del ajedrez se encuentran.</p>
-            <button>Descarga ahora</button>
+            <h1>Bienvenido a AjedrezYA!</h1> <?php if (isset($_SESSION['username'])): ?>
+                <h2><?php echo "Hola, " . $_SESSION['username']; ?></h2> <?php endif; ?>
+            <p>El lugar donde los amantes del ajedrez se encuentran.</p> <button>Descarga ahora</button>
         </div>
     </section>
 
@@ -93,7 +96,7 @@
         <p>Conéctese con otros jugadores, participe en discusiones y más.</p>
     </div>
 
-    <<footer>
+    <footer>
         <div class="footer-content">
             <div class="footer-section footer-about">
                 <h3>About Us</h3>
@@ -117,8 +120,14 @@
         <div class="footer-bottom">
             <p>&copy; 2024 Chess Organization. All Rights Reserved.</p>
         </div>
-        </footer>
+    </footer>
 
+    <script>
+        <?php if (isset($_SESSION['user_created'])): ?>
+            alert("Usuario registrado exitosamente");
+            <?php unset($_SESSION['user_created']); // Eliminar la bandera después de mostrar la alerta ?>
+        <?php endif; ?>
+    </script>
 </body>
 
 </html>
