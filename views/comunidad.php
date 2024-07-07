@@ -1,13 +1,19 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comunidad - Sitio de Ajedrez</title>
+    <title>Comunidad</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
+
 
 <body>
     <header>
@@ -20,23 +26,29 @@
                 <li><a href="comunidad.php">Comunidad</a></li>
             </ul>
         </nav>
-        <div class="auth-buttons">
-            <a href="register.php" class="auth-button">Registrarse</a>
-            <a href="login.php" class="auth-button">Iniciar Sesión</a>
-        </div>
+        <?php if (!isset($_SESSION['username'])): ?>
+            <div class="auth-buttons">
+                <a href="register.php" class="auth-button">Registrarse</a>
+                <a href="login.php" class="auth-button">Iniciar Sesión</a>
+            </div>
+        <?php else: ?>
+            <div class="auth-buttons">
+                <a href="../includes/logout.php" class="auth-button">Cerrar Sesión</a>
+            </div>
+        <?php endif; ?>
     </header>
 
     <main>
         <section class="hero">
             <div class="hero-content">
-                <h1>Únase a Nuestra Comunidad</h1>
-                <p>Conéctese con otros entusiastas del ajedrez.</p>
+                <h1>Bienvenido a nuestra comunidad</h1>
+                <p>Aca podra debatir con otros jugadores.</p>
             </div>
         </section>
 
         <section class="content">
             <h2>Comunidad Activa</h2>
-            <p>En esta sección encontrarás foros y grupos para interactuar con otros jugadores.</p>
+            <p>En esta sección encontrara el foro de AjedrezYa!.</p>
         </section>
     </main>
 

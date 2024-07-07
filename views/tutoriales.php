@@ -1,12 +1,17 @@
+<?php
+session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tutoriales - Sitio de Ajedrez</title>
+    <title>Tutoriales</title>
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -20,10 +25,16 @@
                 <li><a href="comunidad.php">Comunidad</a></li>
             </ul>
         </nav>
-        <div class="auth-buttons">
-            <a href="register.php" class="auth-button">Registrarse</a>
-            <a href="login.php" class="auth-button">Iniciar Sesión</a>
-        </div>
+        <?php if (!isset($_SESSION['username'])): ?>
+            <div class="auth-buttons">
+                <a href="register.php" class="auth-button">Registrarse</a>
+                <a href="login.php" class="auth-button">Iniciar Sesión</a>
+            </div>
+        <?php else: ?>
+            <div class="auth-buttons">
+                <a href="../includes/logout.php" class="auth-button">Cerrar Sesión</a>
+            </div>
+        <?php endif; ?>
     </header>
 
     <main>

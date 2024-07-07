@@ -61,22 +61,6 @@ session_start();
         </div>
     </section>
 
-    <section class="news">
-        <h2>Últimas Noticias</h2>
-        <div class="news-grid">
-            <div class="news-article">
-                <h3>Título de Noticia</h3>
-                <p>Resumen de la noticia...</p>
-                <a href="#">Leer Más</a>
-            </div>
-            <div class="news-article">
-                <h3>Título de Noticia</h3>
-                <p>Resumen de la noticia...</p>
-                <a href="#">Leer Más</a>
-            </div>
-        </div>
-    </section>
-
     <section class="testimonials">
         <h2>Lo Que Dicen Nuestros Usuarios</h2>
         <div class="testimonial-grid">
