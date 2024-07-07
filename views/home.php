@@ -99,15 +99,13 @@ session_start();
     <footer>
         <div class="footer-content">
             <div class="footer-section footer-about">
-                <h3>About Us</h3>
+                <h3>Quienes somos?</h3>
                 <p>Somos una organización dedicada a promover el ajedrez a nivel mundial, ofreciendo recursos y
                     herramientas para jugadores de todos los niveles.</p>
             </div>
             <div class="footer-section footer-contact">
                 <h3>Contacto</h3>
-                <p><i class="fas fa-map-marker-alt"></i> Calle Falsa 123, Ciudad, País</p>
-                <p><i class="fas fa-phone-alt"></i> +123 456 789</p>
-                <p><i class="fas fa-envelope"></i> info@example.com</p>
+                <p><i class="fas fa-envelope"></i> ajedrezya@gmail.com</p>
             </div>
             <div class="footer-section footer-social">
                 <h3>Seguinos en:</h3>
