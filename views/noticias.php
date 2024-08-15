@@ -61,7 +61,7 @@ session_start();
             </div>
             <div class="footer-section footer-contact">
                 <h3>Contacto</h3>
-                <p><i class="fas fa-envelope"></i> ajedrezya@gmail.com</p>
+                <p><i class="fas fa-envelope"></i>ajedrezya@gmail.com</p>
             </div>
             <div class="footer-section footer-social">
                 <h3>Seguinos en:</h3>
