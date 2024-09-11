@@ -48,6 +48,18 @@ session_start();
         <section class="content">
             <h2>Tutoriales Interactivos</h2>
             <p>En esta sección encontrarás tutoriales para mejorar tu juego.</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/7es3ucBXOcs?si=ZH9vy59kl2IKs6nw" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>Este es un tutorial basico de como jugar</p>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/wsicb6FuC24?si=Ss6YmAY8iet0xO_t" title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+            <p>Algunos consejos para el juego</p>
         </section>
     </main>
 
